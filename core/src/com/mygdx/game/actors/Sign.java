@@ -10,7 +10,7 @@ public class Sign extends BaseActor {
 
     public Sign(float x, float y, Stage s) {
         super(x, y, s);
-        loadTexture("sign.png");
+        loadTexture("images/sign.png");
         text = " ";
         viewing = false;
     }

@@ -10,7 +10,7 @@ public class Shark extends BaseActor {
 
     public Shark(float x, float y, Stage s) {
         super(x, y, s);
-        loadTexture("sharky.png");
+        loadTexture("images/sharky.png");
         setBoundaryPolygon(8);
 
         // sharks swim in random directions

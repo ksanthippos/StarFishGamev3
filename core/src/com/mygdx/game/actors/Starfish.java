@@ -12,7 +12,7 @@ public class Starfish extends BaseActor {
     public Starfish(float x, float y, Stage s) {
         super(x, y, s);
         collected = false;
-        loadTexture("starfish.png");
+        loadTexture("images/starfish.png");
 
         // boundaries
         setBoundaryPolygon(8);

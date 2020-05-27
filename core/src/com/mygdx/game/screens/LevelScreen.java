@@ -32,7 +32,7 @@ public class LevelScreen extends BaseScreen {
 
         // background
         BaseActor ocean = new BaseActor(0, 0, mainStage);
-        ocean.loadTexture("water-border.jpg");
+        ocean.loadTexture("images/water-border.jpg");
         ocean.setSize(1200, 900);
         BaseActor.setWorldBounds(ocean);
 
@@ -82,7 +82,7 @@ public class LevelScreen extends BaseScreen {
         uiStage.addActor(starfishLabel);
 
         Button.ButtonStyle buttonStyle = new Button.ButtonStyle();
-        Texture buttonText = new Texture(Gdx.files.internal("undo.png"));
+        Texture buttonText = new Texture(Gdx.files.internal("images/undo.png"));
         TextureRegion buttonRegion = new TextureRegion(buttonText);
         buttonStyle.up = new TextureRegionDrawable(buttonRegion);
         Button restartButton = new Button(buttonStyle);
@@ -120,7 +120,7 @@ public class LevelScreen extends BaseScreen {
                 lose = true;
                 turtle.remove();
                 BaseActor loseMessage = new BaseActor(0, 0, uiStage);
-                loseMessage.loadTexture("game-over.png");
+                loseMessage.loadTexture("images/game-over.png");
                 loseMessage.centerAtPosition(400, 300);
                 loseMessage.setOrigin(0);
                 loseMessage.addAction(Actions.delay(1));
@@ -171,7 +171,7 @@ public class LevelScreen extends BaseScreen {
             if (BaseActor.getList(mainStage, Starfish.class.getCanonicalName()).size() == 0 && !win) {
                 win = true;
                 BaseActor winMessage = new BaseActor(0, 0, uiStage);
-                winMessage.loadTexture("you-win.png");
+                winMessage.loadTexture("images/you-win.png");
                 winMessage.centerAtPosition(400, 300);
                 winMessage.setOrigin(0);
                 winMessage.addAction(Actions.delay(1));
